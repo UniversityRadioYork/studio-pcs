@@ -1,0 +1,22 @@
+# URY Studio PC setup instructions
+
+- Install debian with SSH Server+Standard system utilities (don't select a desktop environment)
+  - Don't set a root password and create a user called "URY Computing" (username: `computing`) with the "New Pres PC" password on bitwarden.
+  - Ensure you set the static IP
+  - Set the hostname to `studio1presenter` (red) or `studio2presenter` (blue)
+- Install git with `sudo apt install git`
+- Clone this repository `git clone https://github.com/UniversityRadioYork/studio-pcs.git`
+- Run the install script `setup-pc.sh`
+- ???
+- Profit
+- Set up misc things
+  - Set wallpaper
+  - Set profile pictures (they're in this repo)
+  - Disable screen lock/sleep on the ury account
+  - Set the volume levels of the UMC outputs
+  - Add a taskbar to both desktops
+  - Set the myradio api key for BAPS
+  - Change the NeutronStudio icon+name to "BAPS3" and use the image in this repo
+  - Add BAPS to the taskbar and desktop
+  - Set firefox to remove data on exit
+  - Create firefox bookmarks for SIS and BAPS presenter

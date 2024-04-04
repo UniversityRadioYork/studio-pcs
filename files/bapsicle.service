@@ -1,0 +1,20 @@
+[Unit]
+Description=BAPS 3
+
+Requires=pipewire-pulse.socket
+ConditionUser=!root
+
+[Service]
+ExecStart=/opt/BAPS/BAPSicle
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+Restart=on-failure
+RestrictNamespaces=yes
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+TimeoutSec=13500000000000
+
+[Install]
+Also=pipewire-pulse.socket
+WantedBy=default.target
