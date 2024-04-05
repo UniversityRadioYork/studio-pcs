@@ -37,3 +37,6 @@ sudo systemctl --global enable bapsicle.service
 # Install BAPS Presenter
 wget https://github.com/UniversityRadioYork/NeutronStudio/releases/download/v0.0.1/neutron-studio_0.0.1_amd64.deb -O /tmp/baps-presenter.deb
 sudo apt install /tmp/baps-presenter.deb
+
+# Set up the network mounts
+cat "$SRC_DIR/extra-fstab" | sudo tee -a /etc/fstab > /dev/null
