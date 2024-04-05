@@ -17,7 +17,7 @@ if [ ! -d $HOST_SRC_DIR ]; then
 fi
 
 # Install basic dependencies
-sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git ffmpeg libportaudio2
+sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git ffmpeg libportaudio2 cifs-utils
 
 # Create users
 sudo adduser ury --disabled-password
@@ -56,7 +56,8 @@ sudo -u ury ln -s /mnt/Shows/ /home/ury/Shows
 sudo -u ury ln -s /mnt/Teams /home/ury/Teams
 
 # Make the home directory readonly
-sudo -u ury chmod 0555 /home/ury
+# This breaks the first login since it needs to create things like .local
+#sudo -u ury chmod 0500 /home/ury
 
 # Block ury user from ssh
 echo "DenyUsers ury" | sudo tee -a /etc/ssh/sshd_config > /dev/null

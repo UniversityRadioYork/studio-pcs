@@ -13,13 +13,17 @@
   - Set wallpaper
   - Set profile pictures (they're in this repo)
   - Disable screen lock/sleep on the ury account
-  - Set the volume levels of the UMC outputs
+  - Set the volume levels of the UMC outputs and set 1/2 as the default output
   - Add a taskbar to both desktops
+  - Make sure the right hand monitor is the primary
   - Unpin the settings app and discover from the taskbar
   - Set the myradio api key, name and hostname in BAPS
   - Set the controller serial port and tracklisting settings in BAPS
+  - Set the audio devices in BAPS
   - Change the NeutronStudio icon+name to "BAPS3" and use the image in this repo
   - Add BAPS to the taskbar and desktop
   - Set firefox to remove data on exit
   - Create firefox bookmarks for SIS and BAPS presenter
   - Install ublock origin in firefox
+  - Turn off the junk on firefox's new tab page
+  - Set the ury user's home directory to readonly with `sudo chmod 0500 /home/ury`
