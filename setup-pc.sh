@@ -22,6 +22,8 @@ sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,j
 # Create users
 sudo adduser ury --disabled-password
 printf 'ury\nury\n' | sudo passwd ury
+sudo usermod -aG dialout ury
+sudo usermod -aG dialout computing
 
 # Configure UMC outputs
 sudo mkdir -p /etc/pipewire/pipewire.conf.d/
