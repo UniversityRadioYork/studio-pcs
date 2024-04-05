@@ -21,3 +21,4 @@
   - Add BAPS to the taskbar and desktop
   - Set firefox to remove data on exit
   - Create firefox bookmarks for SIS and BAPS presenter
+  - Install ublock origin in firefox
