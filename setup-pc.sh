@@ -30,6 +30,7 @@ sudo cp "$HOST_SRC_DIR/20-umc-split.conf" /etc/pipewire/pipewire.conf.d/
 # Install BAPS
 sudo mkdir -p /opt/BAPS
 sudo wget https://github.com/UniversityRadioYork/BAPSicle/releases/download/3.1.1/BAPSicle -O /opt/BAPS/BAPSicle
+sudo chmod +x /opt/BAPS/BAPSicle
 sudo cp "$SRC_DIR/bapsicle.service" /etc/systemd/user/
 sudo systemctl daemon-reload
 sudo systemctl --global enable bapsicle.service
