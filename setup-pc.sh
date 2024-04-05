@@ -17,7 +17,7 @@ if [ ! -d $HOST_SRC_DIR ]; then
 fi
 
 # Install basic dependencies
-sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git
+sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git ffmpeg libportaudio2
 
 # Create users
 sudo adduser ury --disabled-password
