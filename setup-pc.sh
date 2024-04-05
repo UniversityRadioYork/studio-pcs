@@ -43,10 +43,14 @@ sudo apt install /tmp/baps-presenter.deb
 
 # Set up the network mounts
 cat "$SRC_DIR/extra-fstab" | sudo tee -a /etc/fstab > /dev/null
-sudo rmdir /home/ury/Downloads
-sudo rmdir /home/ury/Documents
+sudo rmdir /home/ury/Downloads || true
+sudo rmdir /home/ury/Documents || true
+sudo rmdir /home/ury/Pictures || true
+sudo rmdir /home/ury/Music || true
 sudo -u ury ln -s /mnt/ury/ /home/ury/Documents
 sudo -u ury ln -s /mnt/ury/Downloads/ /home/ury/Downloads
+sudo -u ury ln -s /mnt/ury/My\ Pictures /home/ury/Pictures
+sudo -u ury ln -s /mnt/ury/My\ Music /home/ury/Music
 sudo -u ury ln -s /mnt/People/ /home/ury/People
 sudo -u ury ln -s /mnt/Shows/ /home/ury/Shows
 sudo -u ury ln -s /mnt/Teams /home/ury/Teams
