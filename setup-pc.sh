@@ -60,3 +60,7 @@ sudo -u ury chmod 0555 /home/ury
 
 # Block ury user from ssh
 echo "DenyUsers ury" | sudo tee -a /etc/ssh/sshd_config > /dev/null
+
+# Only show the URY user on the login screen
+sudo mkdir -p /etc/sddm.conf.d/
+sudo cp "$SRC_DIR/sddm-uids.conf" /etc/sddm.conf.d/uids.conf
