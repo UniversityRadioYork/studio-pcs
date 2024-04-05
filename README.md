@@ -15,7 +15,7 @@
   - Disable screen lock/sleep on the ury account
   - Set the volume levels of the UMC outputs
   - Add a taskbar to both desktops
-  - Unpin the settings app from the taskbar
+  - Unpin the settings app and discover from the taskbar
   - Set the myradio api key, name and hostname in BAPS
   - Set the controller serial port and tracklisting settings in BAPS
   - Change the NeutronStudio icon+name to "BAPS3" and use the image in this repo

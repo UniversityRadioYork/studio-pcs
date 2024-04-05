@@ -1,4 +1,4 @@
-//filestore.ury.york.ac.uk/filestore/Profiles/ury	/mnt/ury	cifs	username=ury,password=ury,uid=ury,gid=ury	0	0
-//filestore.ury.york.ac.uk/filestore/People	/mnt/People	cifs	username=ury,password=ury,uid=ury,gid=ury	0	0
-//filestore.ury.york.ac.uk/filestore/Shows	/mnt/Shows	cifs	username=ury,password=ury,uid=ury,gid=ury	0	0
-//filestore.ury.york.ac.uk/filestore/Teams	/mnt/Teams	cifs	username=ury,password=ury,uid=ury,gid=ury	0	0
+//filestore.ury.york.ac.uk/filestore/Profiles/ury	/mnt/ury	cifs	username=ury,password=ury,_netdev,uid=ury,gid=ury	0	0
+//filestore.ury.york.ac.uk/filestore/People	/mnt/People	cifs	username=ury,password=ury,_netdev,uid=ury,gid=ury	0	0
+//filestore.ury.york.ac.uk/filestore/Shows	/mnt/Shows	cifs	username=ury,password=ury,_netdev,uid=ury,gid=ury	0	0
+//filestore.ury.york.ac.uk/filestore/Teams	/mnt/Teams	cifs	username=ury,password=ury,_netdev,uid=ury,gid=ury	0	0
