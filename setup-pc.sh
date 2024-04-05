@@ -54,3 +54,9 @@ sudo -u ury ln -s /mnt/ury/My\ Music /home/ury/Music
 sudo -u ury ln -s /mnt/People/ /home/ury/People
 sudo -u ury ln -s /mnt/Shows/ /home/ury/Shows
 sudo -u ury ln -s /mnt/Teams /home/ury/Teams
+
+# Make the home directory readonly
+sudo -u ury chmod 0555 /home/ury
+
+# Block ury user from ssh
+echo "DenyUsers ury" | sudo tee -a /etc/ssh/sshd_config > /dev/null
