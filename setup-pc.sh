@@ -17,7 +17,7 @@ if [ ! -d $HOST_SRC_DIR ]; then
 fi
 
 # Install basic dependencies
-sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git ffmpeg libportaudio2 cifs-utils
+sudo apt install kde-plasma-desktop firefox-esr mumble vlc ark pipewire-{pulse,jack,alsa} wget curl git ffmpeg libportaudio2 cifs-utils audacity qpwgraph mumble
 
 # Create users
 sudo adduser ury --disabled-password
@@ -31,7 +31,7 @@ sudo cp "$HOST_SRC_DIR/20-umc-split.conf" /etc/pipewire/pipewire.conf.d/
 
 # Install BAPS
 sudo mkdir -p /opt/BAPS
-sudo wget https://github.com/UniversityRadioYork/BAPSicle/releases/download/3.1.1/BAPSicle -O /opt/BAPS/BAPSicle
+sudo wget https://github.com/UniversityRadioYork/BAPSicle/releases/download/3.1.2/BAPSicle -O /opt/BAPS/BAPSicle
 sudo chmod +x /opt/BAPS/BAPSicle
 sudo cp "$SRC_DIR/bapsicle.service" /etc/systemd/user/
 sudo systemctl daemon-reload

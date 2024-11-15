@@ -26,4 +26,5 @@
   - Create firefox bookmarks for SIS and BAPS presenter
   - Install ublock origin in firefox
   - Turn off the junk on firefox's new tab page
+  - Install REAPER
   - Set the ury user's home directory to readonly with `sudo chmod 0500 /home/ury`
